@@ -1,0 +1,29 @@
+{
+  "name": "todo-backend-guided-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fractured2K/todo-backend-guided-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fractured2K/todo-backend-guided-demo/issues"
+  },
+  "homepage": "https://github.com/Fractured2K/todo-backend-guided-demo#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.18.0",
+    "knex": "^0.17.5",
+    "sqlite": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
