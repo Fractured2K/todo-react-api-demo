@@ -84,7 +84,7 @@ axios.put('http://localhost:5000/todos/', { todo: "Updated todo" })
 
 ##### 200 (OK)
 
-> If you successfully updated a todo the endpoint will return an HTTP response with a status code `200` and a body as below.
+> If you successfully update a todo the endpoint will return an HTTP response with a status code `200` and a body as below.
 
 _example:_
 
@@ -119,7 +119,7 @@ axios.delete('http://localhost:5000/todos/1')
 
 ##### 200 (OK)
 
-> If you successfully updated a todo the endpoint will return an HTTP response with a status code `200` and a body as below.
+> If you successfully delete a todo the endpoint will return an HTTP response with a status code `200` and a body as below.
 
 _example:_
 
