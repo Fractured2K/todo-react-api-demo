@@ -22,6 +22,17 @@ server.get('/todos', async (req, res) => {
 	}
 });
 
+server.get('/todos/:id', async (req, res) => {
+	try {
+		const id = req.params.id;
+		const todos = await Todos.findById(id);
+		return res.status(200).json(todos);
+	} catch (err) {
+		console.log(error);
+		res.status(400).json({ message: 'Error trying to get todos' });
+	}
+});
+
 server.post('/todos', async (req, res) => {
 	try {
 		if (!req.body) {
