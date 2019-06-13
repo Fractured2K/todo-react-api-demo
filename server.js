@@ -22,9 +22,9 @@ server.get('/todos', async (req, res) => {
 	}
 });
 
-server.post('/', async (req, res) => {
+server.post('/todos', async (req, res) => {
 	try {
-		if (!req.body.length) {
+		if (!req.body) {
 			return res.status(400).json({
 				message: 'Please make sure to enter a todo!'
 			});
@@ -38,7 +38,7 @@ server.post('/', async (req, res) => {
 	}
 });
 
-server.put('/', async (req, res) => {
+server.put('/todos', async (req, res) => {
 	try {
 		if (!req.body) {
 			return res.status(400).json({
@@ -57,7 +57,7 @@ server.put('/', async (req, res) => {
 	}
 });
 
-server.delete('/:id', async (req, res) => {
+server.delete('/todos/:id', async (req, res) => {
 	try {
 		const id = req.params.id;
 		await Todos.remove(id);
