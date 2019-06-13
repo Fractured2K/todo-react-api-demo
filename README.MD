@@ -1,8 +1,6 @@
 # TODO API DOCUMENTATION
 
-## **TODOS**
-
-### **Gets all todos**
+# **Gets todos**
 
 _Method Url:_ `/todos`
 
@@ -25,7 +23,9 @@ _example:_
 ]
 ```
 
-### **Get a todo**
+---
+
+# **Get todo**
 
 _Method Url:_ `/todos/:id`
 
@@ -60,7 +60,9 @@ _example:_
 }
 ```
 
-### **Update a todo**
+---
+
+# **Update todo**
 
 _Method Url:_ `/todos`
 
@@ -95,7 +97,9 @@ _example:_
 }
 ```
 
-### **Delete a todo**
+---
+
+# **Delete todo**
 
 _Method Url:_ `/todos/:id`
 
