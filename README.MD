@@ -71,7 +71,7 @@ _HTTP method:_ **[PUT]**
 _example call:_
 
 ```
-axios.put('http://localhost:5000/todos/', { todo: "Updated todo" })
+axios.put('http://localhost:5000/todos/', { id: 1, todo: "Updated todo" })
      .then((res) => {
          this.setState({
              todo: res.data.todo
