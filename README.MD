@@ -62,6 +62,43 @@ _example:_
 
 ---
 
+# **Create todo**
+
+_Method Url:_ `/todos`
+
+_HTTP method:_ **[POST]**
+
+_example call:_
+
+```
+axios.post('http://localhost:5000/todos/')
+     .then((res) => {
+         this.setState({
+             todos: [...this.state.todos, res.data.todo]
+         })
+     })
+     .catch(err => {
+       console.log(err)
+     })
+```
+
+#### Response
+
+##### 200 (OK)
+
+> If you successfully created a todo the endpoint will return an HTTP response with a status code `200` and a body as below.
+
+_example:_
+
+```
+{
+    id: 1,
+    todo: "New todo"
+}
+```
+
+---
+
 # **Update todo**
 
 _Method Url:_ `/todos`
