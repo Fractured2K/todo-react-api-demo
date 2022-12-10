@@ -18,7 +18,7 @@
   "homepage": "https://github.com/Fractured2K/todo-backend-guided-demo#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "helmet": "^3.18.0",
     "knex": "^0.17.5",
     "sqlite": "^3.0.3"
